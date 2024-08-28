@@ -1,8 +1,17 @@
 # Största skillnad
 
 def main():
-    # Skriv din lösning här nedan. Byt ut "pass" mot din kod.
-    pass
+    string = input().split(", ")
+    lista=[]
+
+    for t in string:
+        t=int(t)
+    string.sort()
+
+    for t in string:
+        lista.append(int(t))
+
+    return print(int(lista[len(lista)-1])-int(lista[0]))
 
 if __name__ == "__main__":
     main()

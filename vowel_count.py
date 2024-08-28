@@ -1,8 +1,14 @@
 # Vokalräkning
 
 def main():
-    # Skriv din lösning här nedan. Byt ut "pass" mot din kod.
-    pass
+    string=input("")
+    i=0
+    vokaler="aeiouyåäöAEIOUYÅÄÖ"
+    
+    for f in string:
+        if f in vokaler:
+            i+=1
 
+    return print(i)
 if __name__ == "__main__":
     main()
